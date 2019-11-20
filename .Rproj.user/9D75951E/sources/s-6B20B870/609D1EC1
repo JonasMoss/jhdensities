@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1573769506912.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "609D1EC1",
+    "lastKnownWriteTime" : 1573769789,
+    "last_content_update" : 1573769789889,
+    "path" : "D:/Projects/Programming/R packages/jhdensities/tests/testthat/setup.R",
+    "project_path" : "tests/testthat/setup.R",
+    "properties" : {
+        "cursorPosition" : "6,39",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 9,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

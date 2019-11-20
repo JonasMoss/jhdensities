@@ -1,0 +1,42 @@
+test_that("is_valid_index works", {
+  expect_false(is_valid_index(0.1))
+  expect_false(is_valid_index(17))
+  expect_false(is_valid_index(c(1, 2, 3)))
+  expect_false(is_valid_index("haha"))
+  expect_false(is_valid_index(lm))
+  expect_true(is_valid_index(1))
+  expect_true(is_valid_index(16))
+})
+
+test_that("is_valid_input works", {
+  expect_false(is_valid_input(-1))
+  expect_false(is_valid_input(17))
+  expect_false(is_valid_input(c(1, 2, 3)))
+  expect_false(is_valid_input("haha"))
+  expect_false(is_valid_input(lm))
+  expect_true(is_valid_input(0))
+  expect_true(is_valid_input(0.5))
+  expect_true(is_valid_input(c(0.5, 1)))
+  expect_true(is_valid_input(1))
+})
+
+test_that("is_logical_scalar works", {
+  expect_false(is_logical_scalar(-1))
+  expect_false(is_logical_scalar(17))
+  expect_false(is_logical_scalar(c(TRUE, TRUE, FALSE)))
+  expect_false(is_logical_scalar("haha"))
+  expect_false(is_logical_scalar(lm))
+  expect_true(is_logical_scalar(TRUE))
+  expect_true(is_logical_scalar(FALSE))
+})
+
+test_that("is_positive_integer works", {
+  expect_false(is_positive_integer(-1))
+  expect_false(is_positive_integer(0))
+  expect_false(is_positive_integer(17.1))
+  expect_false(is_positive_integer(c(1, 2, 3)))
+  expect_false(is_positive_integer("haha"))
+  expect_false(is_positive_integer(lm))
+  expect_true(is_positive_integer(1))
+  expect_true(is_positive_integer(10))
+})

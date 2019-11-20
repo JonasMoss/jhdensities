@@ -1,0 +1,7 @@
+INDICES <- sort(c(1, 15))
+cat("\n")
+cat("== Information ============ \n")
+cat("The indices tested are: \n  ")
+cat(INDICES)
+cat("\n")
+cat("=========================== \n\n")
