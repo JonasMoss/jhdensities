@@ -7,16 +7,16 @@
 \alias{rjh}
 \title{The Jones-Henderson Example Densities}
 \usage{
-djh(x, index = 1:16, log = FALSE)
+djh(x, index, log = FALSE)
 
-pjh(q, index = 1:16, lower.tail = TRUE, log.p = FALSE)
+pjh(q, index, lower.tail = TRUE, log.p = FALSE)
 
-rjh(n, index = 1:16)
+rjh(n, index)
 }
 \arguments{
 \item{x, q}{vector of quantiles.}
 
-\item{index}{an integer between \code{1} and \code{16} inclusive. Defaults to \code{1}.}
+\item{index}{an integer between \code{1} and \code{16} inclusive.}
 
 \item{log, log.p}{logical; if \code{TRUE}, probabilities \code{p} are given as \code{log(p)}.}
 

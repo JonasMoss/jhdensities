@@ -13,7 +13,7 @@
 #' @param x,q vector of quantiles.
 #' @param n number of observations. If `length(n) > 1`, the length is taken to
 #'     be the number required.
-#' @param index an integer between `1` and `16` inclusive. Defaults to `1`.
+#' @param index an integer between `1` and `16` inclusive.
 #' @param log,log.p logical; if `TRUE`, probabilities `p` are given as `log(p)`.
 #' @param lower.tail logical; if `TRUE` (default), probabilities are
 #'    \eqn{P[X \le x]} otherwise, \eqn{P[X > x]}.
@@ -33,7 +33,7 @@
 #'     on the unit interval. Journal of the American Statistical Association,
 #'     109(505), 346-358.
 
-djh <- function(x, index = 1:16, log = FALSE) {
+djh <- function(x, index, log = FALSE) {
   assertthat::assert_that(is_valid_index(index))
   assertthat::assert_that(is_valid_input(x))
   assertthat::assert_that(is_logical_scalar(log))
@@ -43,7 +43,7 @@ djh <- function(x, index = 1:16, log = FALSE) {
 
 #' @rdname JHDensities
 #' @export
-pjh <- function(q, index = 1:16, lower.tail = TRUE, log.p = FALSE) {
+pjh <- function(q, index, lower.tail = TRUE, log.p = FALSE) {
   assertthat::assert_that(is_valid_index(index))
   assertthat::assert_that(is_valid_input(q))
   assertthat::assert_that(is_logical_scalar(log.p))
@@ -54,7 +54,7 @@ pjh <- function(q, index = 1:16, lower.tail = TRUE, log.p = FALSE) {
 
 #' @rdname JHDensities
 #' @export
-rjh <- function(n, index = 1:16) {
+rjh <- function(n, index) {
   if (length(n) > 1) n <- length(n)
   assertthat::assert_that(is_valid_index(index))
   assertthat::assert_that(is_positive_integer(n))
