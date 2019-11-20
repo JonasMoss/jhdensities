@@ -4,7 +4,7 @@
 # jhdensities <img src="man/figures/logo.png" align="right" width="100" height="56" />
 
 [![Build
-Status](https://travis-ci.org/JonasMoss/jhdensities.svg?branch=master)](https://travis-ci.org/JonasMoss/jhdensities)
+Status](https://travis-ci.com/JonasMoss/jhdensities.svg?branch=master)](https://travis-ci.com/JonasMoss/jhdensities)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/JonasMoss/jhdensities?branch=master&svg=true)](https://ci.appveyor.com/project/JonasMoss/jhdensities)
 [![Coverage
@@ -17,6 +17,8 @@ public.](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostat
 
 An `R`-package containing the sixteen benchmark densities of Jones and
 Henderson (2007b).
+
+**Note:** Work in progress; most densities are not implemented yet.
 
 ## Installation
 
