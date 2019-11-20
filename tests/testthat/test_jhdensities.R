@@ -76,3 +76,12 @@ test_that("rjh*** has the right formals for all indices", {
     )
   }
 })
+
+test_that("rjh*** implents length(n)", {
+  index = 1
+  set.seed(313)
+  left = rjh(10, index)
+  set.seed(313)
+  right = rjh(1:10, index)
+  expect_equal(left, right)
+})
