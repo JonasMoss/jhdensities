@@ -37,7 +37,8 @@ Jones and Henderson (2007b).
 
 ``` r
 x = seq(0, 1, by = 0.01)
-plot(x, jhdensities::djh(x, index = 15), type = "l")
+hist(jhdensities::rjh(10^5, index = 15), freq = FALSE, breaks = "FD")
+lines(x, jhdensities::djh(x, index = 15), type = "l")
 ```
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="750px" />
@@ -54,7 +55,9 @@ Conduct](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html).
 
   - Jones, M. C., & Henderson, D. A. (2007a). Miscellanea kernel-type
     density estimation on the unit interval. Biometrika, 94(4), 977-984.
+    [Link.](https://www.jstor.org/stable/20441430)
 
   - Jones, M. C., & Henderson, D. A. (2007b). Kernel-Type Density
     Estimation on the Unit Interval,” Statistics Group Technical Report,
     the Open University
+    [Link.](https://pdfs.semanticscholar.org/b1b9/474ba8930f25cf2b481cf89e31888a26f6ec.pdf)
