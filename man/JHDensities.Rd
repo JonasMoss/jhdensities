@@ -7,16 +7,16 @@
 \alias{rjh}
 \title{The Jones-Henderson Example Densities}
 \usage{
-djh(x, index, log = FALSE)
+djh(x, index = 1:16, log = FALSE)
 
-pjh(q, index, lower.tail = TRUE, log.p = FALSE)
+pjh(q, index = 1:16, lower.tail = TRUE, log.p = FALSE)
 
-rjh(n, index)
+rjh(n, index = 1:16)
 }
 \arguments{
 \item{x, q}{vector of quantiles.}
 
-\item{index}{an integer between \code{1} and \code{16} inclusive.}
+\item{index}{an integer between \code{1} and \code{16} inclusive. Defaults to \code{1}.}
 
 \item{log, log.p}{logical; if \code{TRUE}, probabilities \code{p} are given as \code{log(p)}.}
 
@@ -29,14 +29,22 @@ be the number required.}
 \value{
 \code{djh} gives the density, \code{pjh} gives the distribution function, and
 \code{rjh} generates random deviates.
+
+The length of the result is determined by \code{n} for \code{rjh}, and is the length
+of \code{x} for \code{djh} and the length of \code{q} for \code{pjh}.
 }
 \description{
 Density, distribution function, and random generation for the sixteen
 Jones-Henderson example densities on the unit interval.
 }
+\details{
+Jones and Henderson (2007b) introduced sixteen densities on the unit interval
+intended as benchmark densities for non-parametric densities on the unit
+interval. For details see Jones and Henderson (2007b).
+}
 \references{
-Jones, M. C., & Henderson, D. A. (2007). Miscellanea kernel-type
-density estimation on the unit interval. Biometrika, 94(4), 977-984.\preformatted{Jones, M. C., & Henderson, D. A. (2007). Kernel-Type Density Estimation
+Jones, M. C., & Henderson, D. A. (2007a). Miscellanea kernel-type
+density estimation on the unit interval. Biometrika, 94(4), 977-984.\preformatted{Jones, M. C., & Henderson, D. A. (2007b). Kernel-Type Density Estimation
 on the Unit Interval,” Statistics Group Technical Report, the Open
 University
 
