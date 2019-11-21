@@ -1,0 +1,44 @@
+---
+title: 'jhdensities: Benchmark densities for non-parametric density estimation on the unit interval'
+tags:
+  - R
+  - statistics
+  - non-parametric
+  - density estimation
+authors:
+  - name: Jonas Moss
+    orcid: 0000-0002-6876-6964
+    affiliation: 1
+affiliations:
+ - name: University of Oslo
+   index: 1
+output:
+  github_document:
+    html_preview: true
+bibliography: paper.bib
+---
+
+# Summary [[NEED min 250 characters]]
+
+`jhdensities` is an R [@r] package that implements the sixteen benchmark 
+densities of [@jh2007b]. These densities serve as benchmarks for 
+non-parametric density estimation on the unit interval. 
+
+Non-parametric estimators of densities the unit interval face the challenge of
+boundary bias, which makes the problem more difficult than non-parametric
+estimation on the the real line. For densities on the real line there are two 
+important collections of benchmark densities. The sixteen Marron-Wand densities 
+[@marron] are normal mixtures and are implemented in the `R` package `nor1mix` 
+[@nor1mix]. The `R` package `benchden` [@benchden-paper, @benchden-cran] 
+implements the 26 benchmark densities of [@berlinet1994].
+
+The purpose of a benchmark density is to evaluate the performance of a non-parametric
+density estimator either by simulation or calculation. The sixteen densities in 
+this package have been used to compare the two Beta kernel estimators of 
+[@chen1999], the Gaussian copula estimator of [@jh2007a], the local 
+likelihood probit estimator of [@geenens], and the improved transformation-based
+kernel of [@wen2015]. Implementations of these estimators 
+can are in [@kldensity, @evmix] (Beta kernel and Gaussian copula), and the local 
+likelihood probit estimator in [@kde1].
+
+# References
